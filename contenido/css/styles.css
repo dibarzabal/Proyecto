@@ -16,8 +16,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 1140px;
     align-items: center;
+    width: 100%;
+}
+.logo{
+    width: 30%;
+    border-radius: 50%;
 }
 .headerUno{
     display: flex;
@@ -52,17 +56,18 @@ ul{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 800px;
+    width: 78%;
 }
 .containerDos{
     display: flex;
     flex-wrap: wrap;
-    width: 320px;
+    width: 10%;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 .artprin{
-    width: 380px;
+    width: 15%;
     margin: 10px;
 }
 .artprin nav{
@@ -73,31 +78,20 @@ ul{
 .artprin img{
    width: 100%;
 }
-.tutoimg{
-    display: flex;
-    margin-bottom: 5px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-}
-.tutoimg img{
-    width: 30%;
-    margin-right: 10px;
-}
-.column{
-    background-color: white;
-    padding: 10px;
-}
-
 .texto{
     background-color: white;
     width: 100%;
-    display: flex;
+    display: block;
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px 0;
     margin-bottom: 10px;
 }
-
+.texto a{
+    color: black;
+    margin-top: 10px;
+    display: block;
+}
 
 
 
