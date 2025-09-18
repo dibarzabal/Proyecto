@@ -20,14 +20,23 @@ header{
     width: 100%;
 }
 .logo{
-    width: 30%;
     border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+   
 }
 .headerUno{
     display: flex;
     flex-wrap: wrap;
     margin-right: 20px;
 }
+
+.headerDos a{
+  margin:10px
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -71,13 +80,23 @@ ul{
     margin: 10px;
 }
 .artprin nav{
+    display: flex;
+    justify-content: center;
     background-color: grey;
     width: 90px;
-    padding: 11px;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 5px;
+    
 }
 .artprin img{
    width: 100%;
 }
+
+.artprin p{
+  margin-top: 7px;
+}
+
 .texto{
     background-color: white;
     width: 100%;
