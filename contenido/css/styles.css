@@ -233,3 +233,48 @@ input[type="reset"] {
 .btn.cancel {
   background-color: #2196f3;
 }
+
+/* product.html */ 
+.body_product {
+margin: 40px;
+}
+
+.info {
+display: flex;
+align-items: flex-start;
+margin-bottom: 40px;
+}
+
+.info img {
+max-width: 300px;
+height: auto;
+border-radius: 5px;
+}
+
+.descripcion {
+max-width: 600px;
+margin-left: 30px;
+
+}
+
+.descripcion h1 {
+margin-bottom: 20px;
+
+}
+
+.descripcion p {
+margin: 10px;
+}
+
+.reseñas {
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.05);
+}
+
+.reseñas h3 {
+margin-bottom: 15px;
+}
+
+.reseñas p {
+  margin: 10px;
+}
