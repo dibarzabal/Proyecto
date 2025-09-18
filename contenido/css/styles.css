@@ -12,7 +12,7 @@ body{
     justify-content: center;
 }
 header{
-    background-color: rgb(248, 47, 37);
+    background-color: gray;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -66,7 +66,7 @@ ul{
     margin: 10px;
 }
 .artprin nav{
-    background-color: rgb(248, 47, 37);
+    background-color: grey;
     width: 90px;
     padding: 11px;
 }
@@ -98,23 +98,144 @@ ul{
     margin-bottom: 10px;
 }
 
-form{
-    margin: 15px;
-    font-family: Roboto;
-}
-.mainregistro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-button{
-    background-color: rgb(136, 136, 255);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
+
+
+
+
+/* LOGIN */
+.container2 {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
 }
 
-label{
-    display: block;
+.form2 {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.label2 {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox2 input {
+  margin-right: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.btn2 {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: block;
+  margin: auto;
+}
+
+
+/* REGISTER */
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.h1_register {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+form {
+  background: rgba(255,255,255,0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+  margin-top: 10px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.obligatorio {
+  display: block;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin: 10px 5px 20px 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #ddd;
+}
+
+
+.btn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px 10px 0 0;
+  border-radius: 5px;
+}
+
+.btn.cancel {
+  background-color: #2196f3;
 }
