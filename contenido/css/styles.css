@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/bg-2.png);
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-color: rgb(248, 47, 37);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1140px;
+    align-items: center;
+}
+.headerUno{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    text-decoration: none;
+    margin-right: 20px;
+}
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+}
+.containerUno{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+}
+.containerDos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+}
+.artprin{
+    width: 380px;
+    margin: 10px;
+}
+.artprin nav{
+    background-color: rgb(248, 47, 37);
+    width: 90px;
+    padding: 11px;
+}
+.artprin img{
+   width: 100%;
+}
+.tutoimg{
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.tutoimg img{
+    width: 30%;
+    margin-right: 10px;
+}
+.column{
+    background-color: white;
+    padding: 10px;
+}
+
+.texto{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+form{
+    margin: 15px;
+    font-family: Roboto;
+}
+.mainregistro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    background-color: rgb(136, 136, 255);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+label{
+    display: block;
+}
