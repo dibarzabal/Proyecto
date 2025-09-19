@@ -89,6 +89,12 @@ ul{
     flex-wrap: wrap;
     width: 78%;
 }
+.containerUno section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .containerDos{
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +139,8 @@ ul{
     margin-top: 10px;
     display: block;
 }
+
+
 
 
 
