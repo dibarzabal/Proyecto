@@ -140,7 +140,31 @@ ul{
     display: block;
 }
 
-
+footer{
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer p{
+    font-family: roboto;
+    color: white;
+    margin: 10px;
+}
+.redes{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-left: 20px;
+}
+.redes img{
+    width: 27px;
+    margin: 8px;
+}
 
 
 
@@ -284,9 +308,6 @@ input[type="reset"] {
 }
 
 /* product.html */ 
-.body_product {
-margin: 40px;
-}
 
 .info {
 display: flex;
