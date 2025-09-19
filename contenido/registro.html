@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
-        <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body class="body_register">
-   <header>
+    <header>
         <a href="./index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
         <section class="headerUno">
-           <ul>
+            <ul>
                 <li> <a href="./carteras.html">CARTERAS</a></li>
                 <li><a href="./camperas.html">CAMPERAS</a></li>
             </ul>
         </section>
 
-         <section>
-            <form action="get" class="form_header">
+        <section>
+            <form action="search-results.html" method="get" class="form_header">
                 <input type="text" class="header_input">
-                <button type="button" class="header_button">Buscar</button>
+                <button type="submit" class="header_button">Buscar</button>
             </form>
         </section>
 
@@ -31,65 +31,43 @@
             <a href="./registro.html">REGISTRO</a>
         </section>
     </header>
-     <main>
-    <div class="container">
-        <h1 class="h1_register">REGISTRATE</h1>
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
-            <span class="obligatorio">Obligatorio.</span>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Ingresá tu email" required>
-            <span class="obligatorio">Obligatorio.</span>
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" placeholder="password" required>
-            <span class="obligatorio">Obligatorio.</span>
+    <main>
+        <div class="container">
+            <h1 class="h1_registerlogin">REGISTRATE</h1>
+            <form action="login.html" method="get">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ingresá tu email" required>
+                <span class="obligatorio">Obligatorio.</span>
 
-            <label for="pais">País de nacimiento</label>
-            <select id="pais" name="pais" required>
-                <option value="">Seleccioná un país</option>
-                <option>Argentina</option>
-                <option>Chile</option>
-                <option>Brasil</option>
-                <option>Uruguay</option>
-                <option>México</option>
-            </select>
-            <span class="obligatorio">Obligatorio.</span>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <span class="obligatorio">Obligatorio.</span>
 
-            <fieldset>
-                <legend>Género</legend>
-                <label><input type="radio" name="genero" value="masc"> Masculino</label>
-                <label><input type="radio" name="genero" value="fem"> Femenino</label>
-                <label><input type="radio" name="genero" value="otro"> Prefiero no decirlo</label>
-            </fieldset>
+                <label for="password">Repetir Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <span class="obligatorio">Obligatorio.</span>
 
-           
-            <label for="comentarios">Dejanos tus comentarios</label>
-            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                <label>
+                    <input type="checkbox" required> Acepto los términos y condiciones.
+                </label>
 
-            <label>
-                <input type="checkbox" required> Acepto los términos y condiciones.
-            </label>
+                <p>Botón enviar con etiqueta 'input'</p>
+                <input type="submit" value="Registrarme">
+                <input type="reset" value="Cancelar">
 
-            <p>Botón enviar con etiqueta 'input'</p>
-            <input type="submit" value="Registrarme">
-            <input type="reset" value="Cancelar">
 
-            <p>Botones enviar con etiquetas 'button'</p>
-            <button type="submit" class="btn">Registrarme</button>
-            <button type="reset" class="btn cancel">Cancelar</button>
-        </form>
-    </div>
+            </form>
+        </div>
     </main>
     <footer>
         <section class="redes">
             <img src="../img/Instagram_icon.png" alt="insta">
             <img src="../img/WhatsApp_icon.png" alt="whatsapp">
         </section>
-            <p>Encontranos en redes en @debelli.bags</p>
-            <p>By: Olivia Videla, Isabella Greco y Delfina Ibarzábal.</p>
+        <p>Encontranos en redes en @debelli.bags</p>
+        <p>By: Olivia Videla, Isabella Greco y Delfina Ibarzábal.</p>
     </footer>
 </body>
 

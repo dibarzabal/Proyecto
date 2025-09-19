@@ -167,14 +167,23 @@ margin-left: 20px;
 }
 
 
+.section_buscadorback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_buscadorback h1{
+    margin: 20px;
+}
+
 
 
 /* LOGIN */
 .login-page {
-  height: 100vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .login-container {
   padding: 30px;
@@ -191,8 +200,8 @@ margin-left: 20px;
   text-align: left;
   margin: 10px 0 5px;
   font-size: 14px;
-  color: #555;
-  font-family: Arial, sans-serif;
+  color: black;
+  font-size: large;
 }
 .login-input {
   width: 100%;
@@ -234,7 +243,7 @@ margin-left: 20px;
   margin: auto;
 }
 
-.h1_register {
+.h1_registerlogin {
   text-align: center;
   color: black;
   margin-bottom: 20px;
@@ -255,8 +264,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"],
-select,
-textarea {
+select{
   width: 100%;
   padding: 8px;
   margin: 5px 0;
@@ -264,15 +272,6 @@ textarea {
   border-radius: 5px;
 }
 
-fieldset {
-  border: none;
-  margin-top: 10px;
-}
-
-legend {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -296,21 +295,8 @@ input[type="reset"] {
 }
 
 
-.btn {
-  background-color: #2196f3;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin: 5px 10px 0 0;
-  border-radius: 5px;
-}
-
-.btn.cancel {
-  background-color: #2196f3;
-}
 
 /* product.html */ 
-
 .info {
 display: flex;
 align-items: flex-start;
