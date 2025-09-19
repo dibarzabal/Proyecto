@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-        <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
+
 <body class="body_register">
-   <header>
-        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+    <header>
+        <a href="./index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
         <section class="headerUno">
             <ul>
-                 <li> <a href="">CARTERAS</a></li>
+                <li> <a href="">CARTERAS</a></li>
                 <li><a href="">RIÑONERAS</a></li>
                 <li><a href="">BILLETERAS</a></li>
             </ul>
         </section>
+
+        <section>
+            <form action="get" class="form_header">
+                <input type="text" class="header_input">
+                <button type="button" class="header_button">Buscar</button>
+            </form>
+        </section>
+
         <section class="headerDos">
             <a href="./login.html">LOGIN</a>
             <a href="./registro.html">REGISTRO</a>
         </section>
     </header>
 
-     <div class="container2">
-    <h1 class="h1_register">BIENVENIDO</h1>
-    <form class="form2">
-      <label for="email" class="label2">Email</label>
-      <input type="email" id="email" name="email" placeholder="Email" required>
+    <div class="container2">
+        <h1 class="h1_register">BIENVENIDO</h1>
+        <form class="form2">
+            <label for="email" class="label2">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
 
-      <label for="password" class="label2">Contraseña</label>
-      <input type="password" id="password" name="password" placeholder="password" required>
+            <label for="password" class="label2">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
 
-      <div class="checkbox2">
-        <input type="checkbox" id="recordarme" name="recordarme">
-        <label for="recordarme" class="label2">Recordarme</label>
-      </div>
+            <div class="checkbox2">
+                <input type="checkbox" id="recordarme" name="recordarme">
+                <label for="recordarme" class="label2">Recordarme</label>
+            </div>
 
-      <p class="error">La combinación ingresada de email y contraseña no es válida.</p>
+            <p class="error">La combinación ingresada de email y contraseña no es válida.</p>
 
-      <button type="submit" class="btn2">Ingresar</button>
-    </form>
-  </div>
+            <button type="submit" class="btn2">Ingresar</button>
+        </form>
+    </div>
 
 </body>
+
 </html>

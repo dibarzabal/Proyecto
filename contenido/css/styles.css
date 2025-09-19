@@ -37,6 +37,28 @@ header{
   margin:10px
 }
 
+.form_header{
+    display: flex;
+    padding: 4px;
+    width: 100%;
+    
+}
+
+.header_button{
+padding: 1px;
+margin: 2px;
+margin-left: 10px;
+border: none;
+border-radius: 5px;
+
+}
+.header_input{
+height: 3px;
+margin: 4px;
+}
+
+
+
 main{
     display: flex;
     flex-wrap: wrap;
