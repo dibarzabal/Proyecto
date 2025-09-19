@@ -101,7 +101,7 @@ ul{
     width: 15%;
     margin: 10px;
 }
-.artprin nav{
+.artprin div{
     display: flex;
     justify-content: center;
     background-color: grey;
