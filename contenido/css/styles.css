@@ -2,17 +2,19 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-weight: 300;
+    font-family: roboto;
 }
 body{
     display: flex;
     flex-wrap: wrap;
-    background-image: url(../img/bg-2.png);
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
 }
+
 header{
-    background-color: gray;
+    background-color: #f9f9f9;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -24,8 +26,7 @@ header{
     width: 120px;
     height: 120px;
     margin-bottom: 12px;
-    margin-top: 12px;
-   
+    margin-top: 12px; 
 }
 .headerUno{
     display: flex;
@@ -33,31 +34,21 @@ header{
     margin-right: 20px;
 }
 
-.headerDos a{
-  margin:10px
-}
-
 .form_header{
     display: flex;
-    padding: 4px;
-    width: 100%;
-    
+    padding: 15px;
+    width: 250px;
+    background-color: #d6d6d6;
 }
-
 .header_button{
-padding: 1px;
-margin: 2px;
 margin-left: 10px;
 border: none;
 border-radius: 5px;
-
 }
 .header_input{
 height: 3px;
 margin: 4px;
 }
-
-
 
 main{
     display: flex;
@@ -70,7 +61,8 @@ main{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(43, 43, 43);
+    font-size: larger;
 }
 li{
     text-decoration: none;
@@ -83,7 +75,6 @@ ul{
 }
 .containerUno{
     display: flex;
-    background-color: white;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -112,7 +103,7 @@ ul{
 .artprin div{
     display: flex;
     justify-content: center;
-    background-color: grey;
+    background-color: #d5d5d5;
     width: 90px;
     padding: 5px;
     margin-top: 7px;
@@ -128,7 +119,6 @@ ul{
 }
 
 .texto{
-    background-color: white;
     width: 100%;
     display: block;
     flex-wrap: wrap;
@@ -143,7 +133,7 @@ ul{
 }
 
 footer{
-    background-color: gray;
+    background-color: #9f9f9f;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -167,18 +157,6 @@ margin-left: 20px;
     width: 27px;
     margin: 8px;
 }
-
-
-.section_buscadorback{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section_buscadorback h1{
-    margin: 20px;
-}
-
 
 
 /* LOGIN */
@@ -337,4 +315,26 @@ margin-bottom: 15px;
 
 .reseñas p {
   margin: 10px;
+}
+
+/*BUSCADOR*/
+
+.section_buscadorback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 420px){
+    .artprin{
+        width: 100%;
+        margin: 0;
+    }
+    .containerDos{
+        display: none;
+    }
+    footer{
+        height: auto;
+    }
 }
