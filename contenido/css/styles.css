@@ -51,7 +51,7 @@ header {
 }
 
 .header_input {
-    height: 3px;
+    height: 15px;
     margin: 4px;
 }
 
@@ -239,7 +239,7 @@ footer p {
 
 
 
-/* REGISTER */
+/* REGISTRO */
 
 .container {
     max-width: 500px;
@@ -264,20 +264,15 @@ label {
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
+.email_text_password{
     width: 100%;
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 
-
-input[type="checkbox"],
-input[type="radio"] {
+.checkbox{
     margin-right: 5px;
 }
 
@@ -288,8 +283,7 @@ input[type="radio"] {
     margin-bottom: 10px;
 }
 
-input[type="submit"],
-input[type="reset"] {
+.submit_reset{
     margin: 10px 5px 20px 0;
     padding: 8px 12px;
     border: none;
