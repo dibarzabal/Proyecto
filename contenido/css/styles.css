@@ -97,6 +97,14 @@ ul {
     flex-wrap: wrap;
 }
 
+.titulos{
+    align-items: center;
+    display: block;
+    margin: 15px;
+    background-color: #d5d5d5;
+    width: 100%;
+}
+
 .containerDos {
     display: flex;
     flex-wrap: wrap;
@@ -179,15 +187,11 @@ footer p {
 
 /* LOGIN */
 .login-page {
-    height: 55vh;
     display: flex;
     justify-content: center;
 }
 
 .login-container {
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
     text-align: center;
 }
 
@@ -203,6 +207,9 @@ footer p {
     font-size: 14px;
     color: black;
     font-size: large;
+}
+.body_register{
+    height: 100vh;
 }
 
 .login-input {
@@ -237,14 +244,7 @@ footer p {
 
 
 
-
-
 /* REGISTRO */
-
-.container {
-    max-width: 500px;
-    margin: auto;
-}
 
 .h1_registerlogin {
     text-align: center;
@@ -292,12 +292,26 @@ label {
 }
 
 
-
 /* product.html */
 .info {
     display: flex;
     align-items: flex-start;
     margin-bottom: 40px;
+}
+.body_result{
+    height: 100vh;
+}
+.main_result{
+    display: flex;
+}
+
+.titulo_black{
+    background-color: #d5d5d5;
+    width: 100%;
+}
+
+.titulo_black h1{
+    text-align: center;
 }
 
 .info img {
