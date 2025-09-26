@@ -1,11 +1,12 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-weight: 300;
     font-family: roboto;
 }
-body{
+
+body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -13,7 +14,7 @@ body{
     background-color: #ffffff;
 }
 
-header{
+header {
     background-color: #f9f9f9;
     display: flex;
     flex-wrap: wrap;
@@ -21,36 +22,40 @@ header{
     align-items: center;
     width: 100%;
 }
-.logo{
+
+.logo {
     border-radius: 50%;
     width: 120px;
     height: 120px;
     margin-bottom: 12px;
-    margin-top: 12px; 
+    margin-top: 12px;
 }
-.headerUno{
+
+.headerUno {
     display: flex;
     flex-wrap: wrap;
     margin-right: 20px;
 }
 
-.form_header{
+.form_header {
     display: flex;
     padding: 15px;
     width: 250px;
     background-color: #d6d6d6;
 }
-.header_button{
-margin-left: 10px;
-border: none;
-border-radius: 5px;
-}
-.header_input{
-height: 3px;
-margin: 4px;
+
+.header_button {
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
-main{
+.header_input {
+    height: 3px;
+    margin: 4px;
+}
+
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -59,34 +64,40 @@ main{
     width: 100%;
     margin-top: 15px;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(43, 43, 43);
     font-size: larger;
 }
-li{
+
+li {
     text-decoration: none;
     margin-right: 20px;
 }
-ul{
+
+ul {
     text-decoration: none;
     list-style-type: none;
     display: flex;
 }
-.containerUno{
+
+.containerUno {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 78%;
 }
-.containerUno section{
+
+.containerUno section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.containerDos{
+
+.containerDos {
     display: flex;
     flex-wrap: wrap;
     width: 10%;
@@ -96,11 +107,13 @@ ul{
     /* border-color:#333;
     border-style:inset; */
 }
-.artprin{
+
+.artprin {
     width: 15%;
     margin: 10px;
 }
-.artprin div{
+
+.artprin div {
     display: flex;
     justify-content: center;
     background-color: #d5d5d5;
@@ -108,17 +121,18 @@ ul{
     padding: 5px;
     margin-top: 7px;
     border-radius: 5px;
-    
-}
-.artprin img{
-   width: 100%;
+
 }
 
-.artprin p{
-  margin-top: 7px;
+.artprin img {
+    width: 100%;
 }
 
-.texto{
+.artprin p {
+    margin-top: 7px;
+}
+
+.texto {
     width: 100%;
     display: block;
     flex-wrap: wrap;
@@ -126,13 +140,14 @@ ul{
     padding: 10px 0;
     margin-bottom: 10px;
 }
-.texto a{
+
+.texto a {
     color: black;
     margin-top: 10px;
     display: block;
 }
 
-footer{
+footer {
     background-color: #9f9f9f;
     display: flex;
     flex-wrap: wrap;
@@ -142,18 +157,21 @@ footer{
     justify-content: center;
     margin-top: 20px;
 }
-footer p{
+
+footer p {
     font-family: roboto;
     color: white;
     margin: 10px;
 }
-.redes{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-margin-left: 20px;
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
-.redes img{
+
+.redes img {
     width: 27px;
     margin: 8px;
 }
@@ -161,55 +179,60 @@ margin-left: 20px;
 
 /* LOGIN */
 .login-page {
-  height: 55vh;
-  display: flex;
-  justify-content: center;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
 }
+
 .login-container {
-  padding: 30px;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
 }
+
 .login-title {
-  margin-bottom: 20px;
-  color: #333;
-  font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
+
 .login-label {
-  text-align: left;
-  margin: 10px 0 5px;
-  font-size: 14px;
-  color: black;
-  font-size: large;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: black;
+    font-size: large;
 }
+
 .login-input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  font-size: 14px;
-  font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
 }
 
 .login-button {
-  width: 100%;
-  padding: 10px;
-  background: rgb(78, 78, 78);
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 10px;
+    background: rgb(78, 78, 78);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
 }
+
 .login-link {
-  display: block;
-  margin-top: 15px;
-  font-size: 14px;
-  color: #007BFF;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -219,122 +242,145 @@ margin-left: 20px;
 /* REGISTER */
 
 .container {
-  max-width: 500px;
-  margin: auto;
+    max-width: 500px;
+    margin: auto;
 }
 
 .h1_registerlogin {
-  text-align: center;
-  color: black;
-  margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
 }
 
 form {
-  background: rgba(255,255,255,0.6);
-  padding: 20px;
-  border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
-select{
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 
 input[type="checkbox"],
 input[type="radio"] {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .obligatorio {
-  display: block;
-  font-size: 12px;
-  color: red;
-  margin-bottom: 10px;
+    display: block;
+    font-size: 12px;
+    color: red;
+    margin-bottom: 10px;
 }
 
 input[type="submit"],
 input[type="reset"] {
-  margin: 10px 5px 20px 0;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  background: #ddd;
+    margin: 10px 5px 20px 0;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #ddd;
 }
 
 
 
-/* product.html */ 
+/* product.html */
 .info {
-display: flex;
-align-items: flex-start;
-margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .info img {
-max-width: 300px;
-height: auto;
-border-radius: 5px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .descripcion {
-max-width: 600px;
-margin-left: 30px;
+    max-width: 600px;
+    margin-left: 30px;
 
 }
 
 .descripcion h1 {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 
 }
 
 .descripcion p {
-margin: 10px;
+    margin: 10px;
 }
 
 .reseñas {
-padding: 20px;
-background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .reseñas h3 {
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .reseñas p {
-  margin: 10px;
+    margin: 10px;
+}
+
+.foto_producto {
+    width: 100%;
 }
 
 /*BUSCADOR*/
 
-.section_buscadorback{
+.section_buscadorback {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
 }
 
-@media (max-width: 420px){
-    .artprin{
+@media (max-width: 426px) {
+    .artprin {
         width: 100%;
         margin: 0;
     }
-    .containerDos{
+
+    .containerDos {
         display: none;
     }
-    footer{
+
+    footer {
         height: auto;
+    }
+
+    /* PRODUCTO */
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .reseñas {
+        margin: 5%;
+    }
+
+    .foto_producto {
+        margin: 5%;
+        align-self: center;
+
     }
 }
