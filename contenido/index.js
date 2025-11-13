@@ -1,41 +1,50 @@
 fetch("https://dummyjson.com/products/category/womens-bags")
-  .then(res => res.json())
-  .then(data => {
-    const seccionCarteras = document.querySelector(".containerUno section:nth-of-type(2)");
+  .then(function(respuesta){
+    return respuesta.json();
+  })
+  .then(function(datos){
+    let seccionCarteras = document.querySelector(".containerUno section:nth-of-type(2)");
     seccionCarteras.innerHTML = "";
-
-    data.products.slice(0, 10).forEach(prod => {
+    for(let i = 0; i < 10; i++){
+      let producto = datos.products[i];
       seccionCarteras.innerHTML += `
         <article class="artprin">
-          <img src="${prod.thumbnail}" alt="${prod.title}">
-          <h2>${prod.title}</h2>
-          <p>${prod.description}</p>
-          <p>$${prod.price}</p>
+          <img src="${producto.thumbnail}" alt="${producto.title}">
+          <h2>${producto.title}</h2>
+          <p>${producto.description}</p>
+          <p>$${producto.price}</p>
           <div>
-            <a href="./product.html?id=${prod.id}">Ver más</a>
+            <a href="./product.html?id=${producto.id}">Ver más</a>
           </div>
         </article>`;
-    });
+    }
+  })
+  .catch(function(error){
+    console.log("Error:", error);
   });
 
-
-
-  fetch("https://dummyjson.com/products/category/womens-dresses")
-  .then(res => res.json())
-  .then(data => {
-    const seccionCamperas = document.querySelector(".containerUno section:nth-of-type(4)");
+// Camperas (womens-dresses)
+fetch("https://dummyjson.com/products/category/womens-dresses")
+  .then(function(respuesta){
+    return respuesta.json();
+  })
+  .then(function(datos){
+    let seccionCamperas = document.querySelector(".containerUno section:nth-of-type(4)");
     seccionCamperas.innerHTML = "";
-
-    data.products.slice(0, 10).forEach(prod => {
+    for(let i = 0; i < 10; i++){
+      let producto = datos.products[i];
       seccionCamperas.innerHTML += `
         <article class="artprin">
-          <img src="${prod.thumbnail}" alt="${prod.title}">
-          <h2>${prod.title}</h2>
-          <p>${prod.description}</p>
-          <p>$${prod.price}</p>
+          <img src="${producto.thumbnail}" alt="${producto.title}">
+          <h2>${producto.title}</h2>
+          <p>${producto.description}</p>
+          <p>$${producto.price}</p>
           <div>
-            <a href="./product.html?id=${prod.id}">Ver más</a>
+            <a href="./product.html?id=${producto.id}">Ver más</a>
           </div>
         </article>`;
-    });
+    }
+  })
+  .catch(function(error){
+    console.log("Error:", error);
   });

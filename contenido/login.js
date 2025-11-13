@@ -1,22 +1,22 @@
-const form = document.querySelector(".login-form");
+let formulario = document.querySelector(".login-form");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+formulario.addEventListener("submit", function(event){
+  event.preventDefault();
 
-  const email = document.querySelector("#email").value.trim();
-  const password = document.querySelector("#password").value.trim();
+  let email = document.querySelector("#email").value.trim();
+  let password = document.querySelector("#password").value.trim();
 
-  if (email === "") {
+  if(email === ""){
     alert("El campo email es obligatorio");
     return;
   }
 
-  if (password === "") {
+  if(password === ""){
     alert("El campo contraseña es obligatorio");
     return;
   }
 
-  if (password.length < 6) {
+  if(password.length < 6){
     alert("La contraseña debe tener al menos 6 caracteres");
     return;
   }
