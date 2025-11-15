@@ -1,3 +1,4 @@
+// ACA ES PARA CARTERA
 fetch("https://dummyjson.com/products/category/womens-bags")
   .then(function(respuesta){
     return respuesta.json();
@@ -23,8 +24,9 @@ fetch("https://dummyjson.com/products/category/womens-bags")
     console.log("Error:", error);
   });
 
-// Camperas (womens-dresses)
-fetch("https://dummyjson.com/products/category/womens-dresses")
+
+// ACA ES PARA CAMPERA
+  fetch("https://dummyjson.com/products/category/womens-dresses")
   .then(function(respuesta){
     return respuesta.json();
   })
