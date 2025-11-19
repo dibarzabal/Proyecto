@@ -29,7 +29,7 @@ if (formLogin) {
         let usuarioEncontrado = false;
 
         for (let i = 0; i < usuarios.length; i++) {
-            if (usuarios[i].email === email && usuarios[i].password) {
+            if (usuarios[i].email === email && usuarios[i].password === password) {
                 usuarioEncontrado = true;
             }
         }
