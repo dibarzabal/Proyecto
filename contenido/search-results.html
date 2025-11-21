@@ -25,7 +25,7 @@
 
         <section>
             <form action="search-results.html" method="get" class="form_header">
-                <input type="text" class="header_input">
+                <input type="text" class="header_input" name="q">
                 <div class="invalid-feedback"><p>No puede estar vacio</p></div>
                 <button type="submit" class="header_button">Buscar</button>
                 
@@ -41,48 +41,11 @@
     </header>
 
     <main class="main_result">
-        <section class="titulo_black">
-            <h1>Black</h1>
+        <section>
+            <p class="texto_resultado">Resultados de búsqueda para: </p>
         </section>
-        <section class="containerUno">
-            <article class="artprin">
-                <img src="./img/CARTERA3.webp" alt="CARTERA3">
-                <h2>Rock Black</h2>
-                <p>Cartera urgan style negra, cierres plateados.</p>
-                <p> $76.000</p>
-                <div>
-                    <a href="./product.html"> Ver más </a>
-                </div>
-            </article>
+        <section class="search-results">
 
-            <article class="artprin">
-                <img src="./img/CARTERA5.webp" alt="CARTERA5">
-                <h2>Classic Black</h2>
-                <p>Cartera clasica Tote negra.</p>
-                <p> $82.000</p>
-                <div>
-                    <a href="./product.html"> Ver más </a>
-                </div>
-            </article>
-
-            <article class="artprin">
-                <img src="./img/campera5.webp" alt="CAMPERA5">
-                <h2>Classic Black</h2>
-                <p>Campera eco-cuero clasica negra.</p>
-                <p> $82.000</p>
-                <div>
-                    <a href="./product.html"> Ver más </a>
-                </div>
-            </article>
-            <article class="artprin">
-                <img src="./img/campera5.webp" alt="CAMPERA5">
-                <h2>Classic Black</h2>
-                <p>Campera eco-cuero clasica negra.</p>
-                <p> $82.000</p>
-                <div>
-                    <a href="./product.html"> Ver más </a>
-                </div>
-            </article>
         </section>
 
         <section class="containerDos">
@@ -101,7 +64,7 @@
         <p>Encontranos en redes en @debelli.bags</p>
         <p>By: Olivia Videla, Isabella Greco y Delfina Ibarzábal.</p>
     </footer>
-
+    <script src="./js/results.js"></script>
 </body>
 
 </html>

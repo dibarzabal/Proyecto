@@ -6,7 +6,7 @@ fetch("https://dummyjson.com/products/category/womens-bags")
     return respuesta.json();
   })
   .then(function(datos){
-    let seccionCarteras = document.querySelector(".containerUno section:nth-of-type(2)");
+    let seccionCarteras = document.querySelector(".carteras");
     seccionCarteras.innerHTML = "";
     for(let i = 0; i < 10; i++){
       let producto = datos.products[i];
@@ -22,9 +22,9 @@ fetch("https://dummyjson.com/products/category/womens-bags")
         </article>`;
     }
   })
-  .catch(function(error){
-    console.log("Error:", error);
-  });
+.catch(function(error){
+    console.log("El error es:" + error);
+})
 
 
 // ACA ES PARA CAMPERA
@@ -33,7 +33,7 @@ fetch("https://dummyjson.com/products/category/womens-bags")
     return respuesta.json();
   })
   .then(function(datos){
-    let seccionCamperas = document.querySelector(".containerUno section:nth-of-type(4)");
+    let seccionCamperas = document.querySelector(".vestidos");
     seccionCamperas.innerHTML = "";
     for(let i = 0; i < 10; i++){
       let producto = datos.products[i];

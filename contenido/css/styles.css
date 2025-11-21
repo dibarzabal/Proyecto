@@ -404,3 +404,10 @@ label {
     flex-wrap: wrap;
 }
 
+.vermas_resultado{
+    font-weight: bold;
+    color: rgb(71, 139, 161);
+}
+.name_resultado{
+    font-weight: bolder;
+}

@@ -1,32 +1,26 @@
-let formulario =document.querySelector("form");
+let formulario =document.querySelector(".formulario_registro");
 formulario.addEventListener("submit",function(e) {
+    e.preventDefault();
+
 
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
     let repetir = document.querySelector("#repetir").value;
 
     if(email === "") {
-        e.preventDefault();
         alert("El email es obligatorio");
-        return;
     }
 
     if (password === "") {
-        e.preventDefault();
         alert("La contrasena es obligatorio");
-        return;
     }
 
     if (password.length < 6) {
-        e.preventDefault();
         alert("La contrasena debe tener al menos 6 caracteres");
-        return;
     }
 
     if (password !== repetir) {
-        e.preventDefault();
         alert("Las contrasenas no coinciden");
-        return;
     }
 
     let usuarios = [];

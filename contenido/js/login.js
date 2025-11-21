@@ -1,8 +1,7 @@
 
 let formLogin = document.querySelector(".login-form");
 
-if (formLogin) {
-    formLogin.addEventListener("submit", function (e) {
+formLogin.addEventListener("submit", function (e) {
         e.preventDefault();
         let email = document.querySelector("#email").value;
         let password = document.querySelector("#password").value;
@@ -43,8 +42,6 @@ if (formLogin) {
 
         location.href = "index.html";
     });
-
-}
 
 
 
