@@ -2,6 +2,7 @@ let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let category = qsObj.get("categoria");
 
+console.log(category);
 
 
 fetch('https://dummyjson.com/products/category/' + category)  
@@ -11,11 +12,10 @@ fetch('https://dummyjson.com/products/category/' + category)
   .then(function(datos){
     console.log(datos)
     let categoria = document.querySelector(".categoria_elegida");
-    seccionCarteras.innerHTML = "";
+    categoria.innerHTML = "";
     for(let i = 0; i < 10; i++){
       let producto = datos.products[i];
-      seccionCarteras.innerHTML += `
-        <article class="artprin">
+      categoria.innerHTML += `<article class="artprin">
           <img src="${producto.thumbnail}" alt="${producto.title}">
           <h2>${producto.title}</h2>
           <p>${producto.description}</p>

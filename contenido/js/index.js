@@ -27,7 +27,7 @@ fetch("https://dummyjson.com/products/category/womens-bags")
 })
 
 
-// ACA ES PARA CAMPERA
+// ACA ES PARA VESTIDOS
   fetch("https://dummyjson.com/products/category/womens-dresses")
   .then(function(respuesta){
     return respuesta.json();

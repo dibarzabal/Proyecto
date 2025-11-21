@@ -411,3 +411,7 @@ label {
 .name_resultado{
     font-weight: bolder;
 }
+
+.no_hay_resultado{
+    display: none;
+}

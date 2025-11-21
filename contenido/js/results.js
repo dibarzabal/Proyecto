@@ -8,7 +8,9 @@ let resultado = objQueryString.get("q")
 console.log(resultado);
 
 let escribio = document.querySelector(".texto_resultado")
+let nohay = document.querySelector(".no_hay_resultado")
 escribio.innerText += " " + resultado
+nohay.innerText += " " + resultado
 
 fetch(`https://dummyjson.com/products/search?q=${resultado}`)
 .then(function(response){
@@ -17,18 +19,27 @@ fetch(`https://dummyjson.com/products/search?q=${resultado}`)
 .then(function(data){
     console.log(data);
     
-    let producto = ""
+    if (data.products.length > 0){
+        
+        let producto = ""
 
-    for (let i = 0; i < data.products.length; i++) {
-        producto = producto + `<article>
-         <a href="product.html?" class="name_resultado">Name: ${data.products[i].title} </a>
-         <div>
-         <a href="./product.html?id=${producto.id}" class="vermas_resultado">Ver más</a>
-         </div>
-        </article>`
+        for (let i = 0; i < data.products.length; i++) {
+            
+            
+            producto = producto + `<article>
+            <a href="product.html?" class="name_resultado">Name: ${data.products[i].title} </a>
+            <div>
+            <a href="./product.html?id=${data.products[i].id}" class="vermas_resultado">Ver más</a>
+            </div>
+            </article>`
+        }
+
+        search.innerHTML = producto
+    } else {
+        nohay.style.display = "block"
+        escribio.style.display = "none"
     }
 
-    search.innerHTML = producto
 })
 .catch(function(error){
     console.log("El error es:" + error);
