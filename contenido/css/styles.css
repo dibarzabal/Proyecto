@@ -392,3 +392,15 @@ label {
 
     }
 }
+
+/*buscador*/ 
+
+.invalid-feedback {
+    display: block;
+    margin-top: 5px; 
+}
+.form_header{
+    display: flex;
+    flex-wrap: wrap;
+}
+

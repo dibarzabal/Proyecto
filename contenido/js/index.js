@@ -1,3 +1,5 @@
+
+
 // ACA ES PARA CARTERA
 fetch("https://dummyjson.com/products/category/womens-bags")
   .then(function(respuesta){
@@ -47,6 +49,26 @@ fetch("https://dummyjson.com/products/category/womens-bags")
         </article>`;
     }
   })
-  .catch(function(error){
-    console.log("Error:", error);
-  });
+.catch(function(error){
+    console.log("El error es:" + error);
+})
+
+
+let campoVacio = document.querySelector(".invalid-feedback")
+let campoBuscador = document.querySelector(".header_input")
+let form = document.querySelector(".form_header")
+
+campoVacio.style.display = "none"
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+    campoVacio.style.display = "none"
+    if (campoBuscador.value == ""){
+      campoVacio.style.display = "block"
+    }
+    else{
+      this.submit()
+    }
+
+  })
