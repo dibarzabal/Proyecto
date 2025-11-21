@@ -6,6 +6,12 @@
     font-family: roboto;
 }
 
+
+.logout{
+    display: none;
+}
+
+
 body {
     display: flex;
     flex-wrap: wrap;

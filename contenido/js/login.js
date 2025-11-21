@@ -3,18 +3,18 @@ let formLogin = document.querySelector(".login-form");
 
 formLogin.addEventListener("submit", function (e) {
         e.preventDefault();
-        let email = document.querySelector("#email").value;
-        let password = document.querySelector("#password").value;
+        let email = document.querySelector("#email");
+        let password = document.querySelector("#password");
 
-        if (email === "") {
+        if (email.value === "") {
             alert("El campo email es obligatorio");
             return;
         }
-        if (password === "") {
+        if (password.value === "") {
             alert("El campo password es obligatorio");
             return;
         }
-        if (password.length < 6) {
+        if (password.value.length < 6) {
             alert("La contrasenia debe tener al menos 6 caracteres");
             return;
         }
@@ -27,7 +27,7 @@ formLogin.addEventListener("submit", function (e) {
 
         let usuarioEncontrado = false;
 
-        for (let i = 0; i < usuarios.length; i++) {
+        for (let i = 0; i < usuarios.value.length; i++) {
             if (usuarios[i].email === email && usuarios[i].password === password) {
                 usuarioEncontrado = true;
             }

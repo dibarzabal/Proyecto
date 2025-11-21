@@ -3,23 +3,23 @@ formulario.addEventListener("submit",function(e) {
     e.preventDefault();
 
 
-    let email = document.querySelector("#email").value;
-    let password = document.querySelector("#password").value;
-    let repetir = document.querySelector("#repetir").value;
+    let email = document.querySelector("#email");
+    let password = document.querySelector("#password");
+    let repetir = document.querySelector("#repetir");
 
-    if(email === "") {
+    if(email.value === "") {
         alert("El email es obligatorio");
     }
 
-    if (password === "") {
+    if (password.value === "") {
         alert("La contrasena es obligatorio");
     }
 
-    if (password.length < 6) {
+    if (password.value.length < 6) {
         alert("La contrasena debe tener al menos 6 caracteres");
     }
 
-    if (password !== repetir) {
+    if (password.value !== repetir) {
         alert("Las contrasenas no coinciden");
     }
 
