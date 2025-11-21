@@ -1,26 +1,31 @@
 let formulario =document.querySelector(".formulario_registro");
-formulario.addEventListener("submit",function(e) {
-    e.preventDefault();
 
+let campoEmail = document.querySelector("#email");
+let campoContraseña = document.querySelector("#password");
+let campoReContraseña = document.querySelector("#repetir");
 
-    let email = document.querySelector("#email");
-    let password = document.querySelector("#password");
-    let repetir = document.querySelector("#repetir");
+let emailVacio = document.querySelector(".emailVacio")
+let contraVacia = document.querySelector(".contraseñaVacia")
+let caractContra = document.querySelector(".caracteresContraseña")
+let reContra = document.querySelector(".repetirContraseña")
 
-    if(email.value === "") {
-        alert("El email es obligatorio");
-    }
+formulario.addEventListener("submit", function(event) {
 
-    if (password.value === "") {
-        alert("La contrasena es obligatorio");
-    }
+    event.preventDefault();
 
-    if (password.value.length < 6) {
-        alert("La contrasena debe tener al menos 6 caracteres");
-    }
+    if (campoEmail.value == ""){
+        emailVacio.style.display = "block"
 
-    if (password.value !== repetir) {
-        alert("Las contrasenas no coinciden");
+    } else if (campoContraseña.value == ""){
+        contraVacia.style.display = "block"
+
+    }else if (campoContraseña.value.length < 6){
+        caractContra.style.display = "block"
+
+    } else if (campoContraseña.value != campoReContraseña.value){
+        reContra.style.display = "block"
+    } else {
+        this.submit()
     }
 
     let usuarios = [];
@@ -29,8 +34,8 @@ formulario.addEventListener("submit",function(e) {
         usuarios = JSON.parse(localStorage.getItem("usuarios"));
     }
     let nuevoUsuario = {
-        email: email,
-        password: password
+        email: email.value,
+        password: password.value
     };
 
     usuarios.push(nuevoUsuario);
@@ -38,3 +43,5 @@ formulario.addEventListener("submit",function(e) {
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
     
 });
+
+

@@ -13,14 +13,11 @@ if (localStorage.getItem("loggedUser")) {
 botonLogout.addEventListener("click", function (e) {
     e.preventDefault();
     localStorage.clear();
-    let saludoElemento = document.querySelector(".saludo");
 
     // LOGIN Y REGISTRO APARECER
     // OCULTAR LOGOUT Y SALUDO
     registro.style.display = "block";
     login.style.display = "block";
 
-// FALTA AGREGAR EL SALUDO CHICAS
-    saludoElemento.innerText = ""
 });
 

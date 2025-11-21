@@ -421,3 +421,24 @@ label {
 .no_hay_resultado{
     display: none;
 }
+
+.saludo{
+    display: none;
+}
+
+.emailVacio{
+    display: none;
+}
+
+.contraseñaVacia{
+    display: none;
+}
+
+.caracteresContraseña{
+    display: none;
+}
+
+.repetirContraseña{
+    display: none;
+}
+
