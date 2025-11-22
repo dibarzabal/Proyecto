@@ -405,6 +405,12 @@ label {
     display: block;
     margin-top: 5px; 
 }
+
+.invalid-feedback-caract{
+    display: block;
+    margin-top: 5px; 
+}
+
 .form_header{
     display: flex;
     flex-wrap: wrap;
@@ -441,4 +447,3 @@ label {
 .repetirContraseña{
     display: none;
 }
-

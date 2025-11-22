@@ -56,8 +56,7 @@ for (let i = 0; i < data.reviews.length; i++) {
 
     reviews.innerHTML += `
         <p>${estrellas} "${review.comment}" <br>
-        <i>- ${review.reviewerName}, ${review.date}</i></p>
-`;
+        <i>- ${review.reviewerName}, ${review.date}</i></p>`;
 }
 })
 .catch(function (error) {

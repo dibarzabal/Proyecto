@@ -34,12 +34,11 @@ formulario.addEventListener("submit", function(event) {
         usuarios = JSON.parse(localStorage.getItem("usuarios"));
     }
     let nuevoUsuario = {
-        email: email.value,
-        password: password.value
+        email: campoEmail.value,
+        password: campoContraseña.value
     };
 
     usuarios.push(nuevoUsuario);
-
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
     
 });

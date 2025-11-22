@@ -2,22 +2,22 @@
 let login = document.querySelector(".link-login")
 let registro = document.querySelector(".link-registro")
 let botonLogout = document.querySelector(".logout");
+let saludado = document.querySelector(".saludo")
 
-
-// if HAY ALGUIEN REGISTRADO: QUE APARESQUE EL LOGOUT
 if (localStorage.getItem("loggedUser")) {
     botonLogout.style.display = "block";
+    saludado.style.display = "block";
+    registro.style.display = "none";
+    login.style.display = "none";
 }
-
-
 botonLogout.addEventListener("click", function (e) {
     e.preventDefault();
-    localStorage.clear();
+    localStorage.removeItem("loggedUser");
 
-    // LOGIN Y REGISTRO APARECER
-    // OCULTAR LOGOUT Y SALUDO
-    registro.style.display = "block";
-    login.style.display = "block";
-
+    registro.style.display = "block"
+    login.style.display = "block"
+    botonLogout.style.display = "none"
+    saludado.style.display="none"
 });
+
 

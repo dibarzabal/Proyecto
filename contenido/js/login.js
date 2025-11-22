@@ -19,7 +19,6 @@ formLogin.addEventListener("submit", function (e) {
 
         }else if (campoLogincontra.value.length < 6){
             contraCaract.style.display = "block"
-
         } 
 
         let usuarios = [];
@@ -43,11 +42,8 @@ formLogin.addEventListener("submit", function (e) {
         else {
             this.submit()
         }
-
         localStorage.setItem("loggedUser", campoLoginemail.value)
-
         location.href = "index.html";
-
     });
 
 

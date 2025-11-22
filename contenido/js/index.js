@@ -1,6 +1,4 @@
-
-
-// ACA ES PARA CARTERA
+// ACA ES PARA CARTERAS
 fetch("https://dummyjson.com/products/category/womens-bags")
   .then(function(respuesta){
     return respuesta.json();
@@ -25,7 +23,6 @@ fetch("https://dummyjson.com/products/category/womens-bags")
 .catch(function(error){
     console.log("El error es:" + error);
 })
-
 
 // ACA ES PARA VESTIDOS
   fetch("https://dummyjson.com/products/category/womens-dresses")
@@ -53,11 +50,12 @@ fetch("https://dummyjson.com/products/category/womens-bags")
     console.log("El error es:" + error);
 })
 
-
 let campoVacio = document.querySelector(".invalid-feedback")
 let campoBuscador = document.querySelector(".header_input")
 let form = document.querySelector(".form_header")
+let campoCaracteres = document.querySelector(".invalid-feedback-caract")
 
+campoCaracteres.style.display = "none"
 campoVacio.style.display = "none"
 
 form.addEventListener("submit", function(event) {
@@ -66,9 +64,10 @@ form.addEventListener("submit", function(event) {
     campoVacio.style.display = "none"
     if (campoBuscador.value == ""){
       campoVacio.style.display = "block"
+    } else if (campoBuscador.value.length < 3) {
+      campoCaracteres.style.display = "block"
     }
     else{
       this.submit()
     }
-
   })

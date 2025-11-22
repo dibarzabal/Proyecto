@@ -4,7 +4,6 @@ let category = qsObj.get("categoria");
 
 console.log(category);
 
-
 fetch('https://dummyjson.com/products/category/' + category)  
 .then(function(respuesta){
     return respuesta.json();
